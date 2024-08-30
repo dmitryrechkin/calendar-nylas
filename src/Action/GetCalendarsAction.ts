@@ -38,7 +38,7 @@ export class GetCalendarsAction implements GetCalendarsActionInterface
 		const response = await this.requestSender.send(path, { method: 'GET' });
 		if (!response.ok)
 		{
-			console.error(`Failed to fetch calendars: ${response.statusText}`);
+			console.error(`Failed to fetch calendars: ${response.statusText}`, response);
 			return ResponseHelper.createErrorResponse(EnumErrorCode.REQUEST_FAILED, response.statusText);
 		}
 

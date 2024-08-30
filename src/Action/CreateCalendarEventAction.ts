@@ -49,7 +49,7 @@ export class CreateCalendarEventAction implements CreateCalendarEventActionInter
 		const response = await this.requestSender.send(path, {method: 'POST', body: JSON.stringify(nylasEvent)});
 		if (!response.ok)
 		{
-			console.error(`Failed to create event: ${response.statusText}`);
+			console.error(`Failed to create event: ${response.statusText}`, response);
 			return ResponseHelper.createErrorResponse(EnumErrorCode.REQUEST_FAILED, response.statusText);
 		}
 

@@ -48,7 +48,7 @@ export class GetCalendarsAvailabilityAction implements GetCalendarsAvailabilityA
 		const response = await this.requestSender.send(path, { method: 'POST', body: JSON.stringify(nylasInput) }, false);
 		if (!response.ok)
 		{
-			console.error(`Failed to fetch calendars availability: ${response.statusText}`);
+			console.error(`Failed to fetch calendars availability: ${response.statusText}`, response);
 			return ResponseHelper.createErrorResponse(EnumErrorCode.REQUEST_FAILED, response.statusText);
 		}
 

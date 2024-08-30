@@ -44,7 +44,7 @@ export class GetCalendarEventsAction implements GetCalendarEventsActionInterface
 		const response = await this.requestSender.send(path, { method: 'GET' });
 		if (!response.ok)
 		{
-			console.error(`Failed to fetch events: ${response.statusText}`);
+			console.error(`Failed to fetch events: ${response.statusText}`, response);
 			return ResponseHelper.createErrorResponse(EnumErrorCode.REQUEST_FAILED, response.statusText);
 		}
 

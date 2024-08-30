@@ -37,7 +37,7 @@ export class DeleteCalendarEventAction implements DeleteCalendarEventActionInter
 
 		if (!response.ok)
 		{
-			console.error(`Failed to delete event: ${response.statusText}`);
+			console.error(`Failed to delete event: ${response.statusText}`, response);
 			return ResponseHelper.createErrorResponse(EnumErrorCode.REQUEST_FAILED, response.statusText);
 		}
 
