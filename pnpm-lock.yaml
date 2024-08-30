@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@dmitryrechkin/calendar-core':
         specifier: ^1.0.0
-        version: 1.0.0
+        version: 1.0.2
       '@dmitryrechkin/foundation-core':
         specifier: ^1.0.0
-        version: 1.0.0
+        version: 1.0.3
       '@dmitryrechkin/request-sender-core':
         specifier: ^1.0.0
         version: 1.0.2
@@ -54,8 +54,8 @@ importers:
 
 packages:
 
-  '@dmitryrechkin/calendar-core@1.0.0':
-    resolution: {integrity: sha512-aocIf2h1QJUlSeLnf0oudi8LELEeQWYSQR/k95evzq92gdCPh+VLwWdmzDzZGMw68dJP38m9vK8+yI8iYVqCVA==}
+  '@dmitryrechkin/calendar-core@1.0.2':
+    resolution: {integrity: sha512-0HJAVQOv/iWbH0dZbic/T4ArOc0X54G74xaAK0fwLIkYrMH1P6creTEDulXrITSVdwoHcTnc9GSCUMA0KZYEEA==}
 
   '@dmitryrechkin/eslint-standard@1.0.7':
     resolution: {integrity: sha512-QtIdXK1kYzpIC4Gr19lt/q/0Cr3mDRVohx5OpNQoc3PUFOh9M3YjnDEf5y/an0fwcILvs3J4H3hA5/b+Fx96Ew==}
@@ -65,8 +65,8 @@ packages:
       eslint: ^8.0.0
       eslint-plugin-unused-imports: ^3.0.0
 
-  '@dmitryrechkin/foundation-core@1.0.0':
-    resolution: {integrity: sha512-VAmiu21vzpaUMn8WLTvcuakvc677xCfp4uKLG4sDhH4XQFGGfhgKdmxCvQY5dUlzBDi6jmsGvCQYb4aF1uDgvg==}
+  '@dmitryrechkin/foundation-core@1.0.3':
+    resolution: {integrity: sha512-YoRaxvNzACSzGEosepJdXM/sn0AkNLL2ftbU8SKumuIz7iOEWgwasz3izyrkY8gAI24gKaNr0MmuW8Hnz41LCQ==}
 
   '@dmitryrechkin/request-sender-core@1.0.2':
     resolution: {integrity: sha512-W7PX2/mQGrdBGcRkqQL5iveFRuRNq1ujxTt0bvzQnOtMXJOVGIIuJcpk1ShbkpxY7M+aAu/7szwW0rW9IbOw1w==}
@@ -132,11 +132,11 @@ packages:
   '@types/chai-subset@1.3.5':
     resolution: {integrity: sha512-c2mPnw+xHtXDoHmdtcCXGwyLMiauiAyxWMzhGpqHC4nqI/Y5G2XhTampslK2rb59kpcuHon03UH8W6iYUzw88A==}
 
-  '@types/chai@4.3.17':
-    resolution: {integrity: sha512-zmZ21EWzR71B4Sscphjief5djsLre50M6lI622OSySTmn9DB3j+C3kWroHfBQWXbOBwbgg/M8CG/hUxDLIloow==}
+  '@types/chai@4.3.19':
+    resolution: {integrity: sha512-2hHHvQBVE2FiSK4eN0Br6snX9MtolHaTo/batnLjlGRhoQzlCL61iVpxoqO7SfFyOw+P/pwv+0zNHzKoGWz9Cw==}
 
-  '@types/node@20.14.15':
-    resolution: {integrity: sha512-Fz1xDMCF/B00/tYSVMlmK7hVeLh7jE5f3B7X1/hmV0MJBwE27KlS7EvD/Yp+z1lm8mVhwV5w+n8jOZG8AfTlKw==}
+  '@types/node@22.5.1':
+    resolution: {integrity: sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==}
 
   '@typescript-eslint/eslint-plugin@7.18.0':
     resolution: {integrity: sha512-94EQTWZ40mzBc42ATNIBimBEDltSJ9RQHCC8vc/PDbxi4k8dVwUAv4o98dk50M1zB+JGFxp43FP7f8+FP8R6Sw==}
@@ -567,8 +567,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  ignore@5.3.1:
-    resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
+  ignore@5.3.2:
+    resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
   import-fresh@3.3.0:
@@ -590,8 +590,8 @@ packages:
     resolution: {integrity: sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==}
     engines: {node: '>= 0.10'}
 
-  is-core-module@2.15.0:
-    resolution: {integrity: sha512-Dd+Lb2/zvk9SKy1TGCt1wFJFo/MWBPMX5x7KcvLajWTGuomczdQX61PvY5yK6SVACwpoexWo81IfFyoKY2QnTA==}
+  is-core-module@2.15.1:
+    resolution: {integrity: sha512-z0vtXSwucUJtANQWldhbtbt7BnL0vxiFjIdDLAatwhDYty2bad6s+rijD6Ri4YuYJubLzIJLUidCh09e1djEVQ==}
     engines: {node: '>= 0.4'}
 
   is-extglob@2.1.1:
@@ -656,8 +656,8 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
 
-  micromatch@4.0.7:
-    resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
+  micromatch@4.0.8:
+    resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
 
   minimatch@3.1.2:
@@ -872,8 +872,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
@@ -946,9 +946,9 @@ packages:
 
 snapshots:
 
-  '@dmitryrechkin/calendar-core@1.0.0':
+  '@dmitryrechkin/calendar-core@1.0.2':
     dependencies:
-      '@dmitryrechkin/foundation-core': 1.0.0
+      '@dmitryrechkin/foundation-core': 1.0.3
       chrono-node: 2.7.6
       zod: 3.23.8
 
@@ -959,7 +959,7 @@ snapshots:
       eslint: 8.57.0
       eslint-plugin-unused-imports: 3.2.0(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
 
-  '@dmitryrechkin/foundation-core@1.0.0':
+  '@dmitryrechkin/foundation-core@1.0.3':
     dependencies:
       zod: 3.23.8
 
@@ -988,7 +988,7 @@ snapshots:
       debug: 4.3.6
       espree: 9.6.1
       globals: 13.24.0
-      ignore: 5.3.1
+      ignore: 5.3.2
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       minimatch: 3.1.2
@@ -1024,13 +1024,13 @@ snapshots:
 
   '@types/chai-subset@1.3.5':
     dependencies:
-      '@types/chai': 4.3.17
+      '@types/chai': 4.3.19
 
-  '@types/chai@4.3.17': {}
+  '@types/chai@4.3.19': {}
 
-  '@types/node@20.14.15':
+  '@types/node@22.5.1':
     dependencies:
-      undici-types: 5.26.5
+      undici-types: 6.19.8
 
   '@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)':
     dependencies:
@@ -1042,7 +1042,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 7.18.0
       eslint: 8.57.0
       graphemer: 1.4.0
-      ignore: 5.3.1
+      ignore: 5.3.2
       natural-compare: 1.4.0
       ts-api-utils: 1.3.0(typescript@5.5.4)
     optionalDependencies:
@@ -1346,7 +1346,7 @@ snapshots:
       glob-parent: 6.0.2
       globals: 13.24.0
       graphemer: 1.4.0
-      ignore: 5.3.1
+      ignore: 5.3.2
       imurmurhash: 0.1.4
       is-glob: 4.0.3
       is-path-inside: 3.0.3
@@ -1388,7 +1388,7 @@ snapshots:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.7
+      micromatch: 4.0.8
 
   fast-json-stable-stringify@2.1.0: {}
 
@@ -1460,7 +1460,7 @@ snapshots:
       array-union: 2.1.0
       dir-glob: 3.0.1
       fast-glob: 3.3.2
-      ignore: 5.3.1
+      ignore: 5.3.2
       merge2: 1.4.1
       slash: 3.0.0
 
@@ -1472,7 +1472,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  ignore@5.3.1: {}
+  ignore@5.3.2: {}
 
   import-fresh@3.3.0:
     dependencies:
@@ -1490,7 +1490,7 @@ snapshots:
 
   interpret@1.4.0: {}
 
-  is-core-module@2.15.0:
+  is-core-module@2.15.1:
     dependencies:
       hasown: 2.0.2
 
@@ -1541,7 +1541,7 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  micromatch@4.0.7:
+  micromatch@4.0.8:
     dependencies:
       braces: 3.0.3
       picomatch: 2.3.1
@@ -1623,7 +1623,7 @@ snapshots:
 
   resolve@1.22.8:
     dependencies:
-      is-core-module: 2.15.0
+      is-core-module: 2.15.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
@@ -1714,27 +1714,27 @@ snapshots:
 
   typescript@5.5.4: {}
 
-  undici-types@5.26.5: {}
+  undici-types@6.19.8: {}
 
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
 
-  vite@3.2.10(@types/node@20.14.15):
+  vite@3.2.10(@types/node@22.5.1):
     dependencies:
       esbuild: 0.15.18
       postcss: 8.4.41
       resolve: 1.22.8
       rollup: 2.79.1
     optionalDependencies:
-      '@types/node': 20.14.15
+      '@types/node': 22.5.1
       fsevents: 2.3.3
 
   vitest@0.24.5:
     dependencies:
-      '@types/chai': 4.3.17
+      '@types/chai': 4.3.19
       '@types/chai-subset': 1.3.5
-      '@types/node': 20.14.15
+      '@types/node': 22.5.1
       chai: 4.5.0
       debug: 4.3.6
       local-pkg: 0.4.3
@@ -1742,7 +1742,7 @@ snapshots:
       tinybench: 2.9.0
       tinypool: 0.3.1
       tinyspy: 1.1.1
-      vite: 3.2.10(@types/node@20.14.15)
+      vite: 3.2.10(@types/node@22.5.1)
     transitivePeerDependencies:
       - less
       - sass

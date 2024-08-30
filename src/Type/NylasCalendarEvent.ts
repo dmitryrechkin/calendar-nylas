@@ -99,7 +99,7 @@ export const nylasCalendarEventWhenSchema = z.union([
 export const nylasCalendarEventSchema = z.object({
 	id: z.string().optional().describe('A unique identifier for the event.'),
 	// eslint-disable-next-line @typescript-eslint/naming-convention
-	calendar_id: z.string().optional().describe('The ID of the calendar that the event belongs to.'),
+	calendar_id: z.string().describe('The ID of the calendar that the event belongs to.'),
 	busy: z.boolean().describe('If true, shows the event\'s time block as "busy" on shared or public calendars.'),
 	capacity: z.number().optional().describe('The maximum number of participants that may attend the event.'),
 	conferencing: nylasCalendarEventConferenceSchema.optional().describe('An object that allows you to automatically create a conference or enter conferencing details manually.'),
