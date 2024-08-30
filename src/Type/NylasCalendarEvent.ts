@@ -113,7 +113,7 @@ export const nylasCalendarEventSchema = z.object({
 	recurrence: z.array(z.string()).optional().describe('An array of RRULE and EXDATE strings.'),
 	reminders: nylasCalendarEventReminderSchema.optional().describe('A list of reminders to send for the event.'),
 	title: z.string().max(1024).describe('The name of the event.'),
-	visibility: z.enum(['public', 'private']).optional().describe('The event\'s visibility. If not defined, the calendar\'s default settings are used.'),
+	visibility: z.enum(['public', 'private', 'default']).optional().describe('The event\'s visibility. If not defined, the calendar\'s default settings are used.'),
 	when: nylasCalendarEventWhenSchema.describe('An object that represents the time and duration of an event.')
 });
 
