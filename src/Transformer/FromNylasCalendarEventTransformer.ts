@@ -25,7 +25,10 @@ export class FromNylasCalendarEventTransformer implements TransformerInterface<T
 	 */
 	public transform(input: TypeNylasCalendarEvent | undefined): TypeCalendarEvent | undefined
 	{
-		if (!input) return undefined;
+		if (!input?.id)
+		{
+			return undefined;
+		}
 
 		return {
 			id: input.id,
@@ -57,7 +60,10 @@ export class FromNylasCalendarEventTransformer implements TransformerInterface<T
 	 */
 	private transformParticipant(input: TypeNylasCalendarEventParticipant | undefined): TypeCalendarEventParticipant | undefined
 	{
-		if (!input) return undefined;
+		if (!input || (!input.email && !input.name))
+		{
+			return undefined;
+		}
 
 		return {
 			comment: input.comment,
@@ -76,7 +82,10 @@ export class FromNylasCalendarEventTransformer implements TransformerInterface<T
 	 */
 	private transformResource(input: TypeNylasCalendarEventResource | undefined): TypeCalendarEventResource | undefined
 	{
-		if (!input) return undefined;
+		if (!input || (!input.email && !input.name))
+		{
+			return undefined;
+		}
 
 		return {
 			email: input.email,
@@ -92,7 +101,10 @@ export class FromNylasCalendarEventTransformer implements TransformerInterface<T
 	 */
 	private transformReminderOverride(input: TypeNylasCalendarEventReminderOverride | undefined): TypeCalendarEventReminderOverride | undefined
 	{
-		if (!input) return undefined;
+		if (!input || (!input.reminder_minutes && !input.reminder_method))
+		{
+			return undefined;
+		}
 
 		return {
 			// eslint-disable-next-line @typescript-eslint/naming-convention
@@ -110,7 +122,10 @@ export class FromNylasCalendarEventTransformer implements TransformerInterface<T
 	 */
 	private transformReminders(input: TypeNylasCalendarEventReminder | undefined): TypeCalendarEventReminder | undefined
 	{
-		if (!input) return undefined;
+		if (!input || !('use_default' in input))
+		{
+			return undefined;
+		}
 
 		return {
 			// eslint-disable-next-line @typescript-eslint/naming-convention
@@ -127,7 +142,10 @@ export class FromNylasCalendarEventTransformer implements TransformerInterface<T
 	 */
 	private transformConferencing(input: TypeNylasCalendarEvent['conferencing'] | undefined): TypeCalendarEvent['conferencing'] | undefined
 	{
-		if (!input) return undefined;
+		if (!input || (!input.autocreate && !input.details))
+		{
+			return undefined;
+		}
 
 		return {
 			provider: input.provider,
